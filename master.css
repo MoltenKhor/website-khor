@@ -1,106 +1,89 @@
 /*{
 border:1px solid red;
 }*/
-body{
+
+html,
+body {
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+  width: 100%;
+  height: 100%;
+  margin:0;
+  padding:0;
   background: #101010;
 }
-.top-bar {
-  margin: 40px 10px 10px 10px;
-  border:1px solid red;
-  overflow: hidden;
+
+#canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  z-index: 1;
+  position: absolute;
 }
 
-.main-name {
-  margin-left: 50px;
-  float: left;
+.about-container {
+  margin-top: 350px;
+  margin-left: 100px;
+  position: relative;
+  display: block;
+  /*border: 1px solid red; */
+  z-index: 100;
+  width: 40%;
 }
-
-.main-name p {
-  font-size: 42px;
-  font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
-  color: white;
+.about-description h1{
+  font-family: Montserrat;
+  color: #D5D5D5;
+  font-size: 39.5pt;
 }
-
-
-.top-button-spacer {
-  float: right;
-  border:1px solid red;
-  overflow: hidden;
-}
-.top-button-spacer p {
-  /*height: 162px;*/
-  border:1px solid red;
-
-}
-
-
-.button{
+.about-description p{
+  width: 510px;
+  font-family: Montserrat;
+  font-size: 18pt;
+  color: #CCC;
   margin-bottom: 50px;
 }
-.square {
-  height: 20px;
-  width: 20px;
-  background-color: red;
-  display: inline-block;
-  transition: 0.3s;
-  float:right;
-}
-.square:hover {
-  height: 40px;
-  width: 40px;
-}
-.square p{
-  padding-right: 30px;
-  float: right;
-}
 
-.nav-bar{
-  width: 120px;
-  float:right;
-  margin-right: 40px;
-  border:1px solid red;
-  width: 15%;
-  position: fixed;
-  top: 40%;
-  right: 0px;
-  transition: all .3s;
-}
-.nav-bar a{
-  color:white;
+.nav-buttons a {
+  border: 1px solid #606060;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-size: 18pt;
+  font-family: Montserrat;
+  font-weight: 200;
+  color: #606060;
+  margin-right: 40px;
 
-}
-.nav-bar p{
-color: #101010;
-transition: 0.3s;
-}
-.nav-bar p:hover{
-  color: white;
+  transition: .4s;
 }
 
-.self-image {
-  margin-left: 10px;
-  border: 1px solid red;
-  width: 35%;
-  height: 800px;
-  float:left;
-  background: #30903010;
+.nav-buttons a:hover {
+  color: #BBB;
+  border: 1px solid #BBB;
 }
 
-.center {
-  border: 1px solid red;
-  width: 45%;
-  float: left;
-  height: 800px;
+.about {
+  visibility: visible;
+  width: 60%;
 }
-
-#Skills {
-  margin-left: 10px;
-  width: 80%;
-  height: 1000px;
-  border: 1px solid red;
-  float: left;
-  margin-bottom: 20px;
+.about h1{
+  font-family: Montserrat;
+  font-weight: 400;
+  color: #BBB;
+  font-size: 36pt;
+  margin-top: 200px;
+  margin-left: 120px;
+}
+.about p {
+  font-family: Montserrat;
+  font-weight: 200;
+  font-size: 20pt;
+  margin-top: 100px;
+  color: #CCC;
+  margin-left: 100px;
+  padding-right: 100px;
 }
