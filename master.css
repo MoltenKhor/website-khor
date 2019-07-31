@@ -5,8 +5,8 @@ border:1px solid red;
 html,
 body {
   display: flex;
-  align-items: stretch;
-  align-content: stretch;
+
+
   width: 100%;
   height: 100%;
   margin:0;
@@ -19,56 +19,72 @@ body {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  z-index: 1;
+  z-index: 0;
   position: absolute;
 }
-
+/*LEFT CONTAINER ELEMENTS*/
 .about-container {
-  margin-top: 350px;
-  margin-left: 100px;
-  position: relative;
-  display: block;
-  /*border: 1px solid red; */
-  z-index: 100;
+  align-items: center;
+  text-align: center;
+  position:absolute;
   width: 40%;
+}
+#me {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 50px;
+  margin-top: 100px;
 }
 .about-description h1{
   font-family: Montserrat;
   color: #D5D5D5;
   font-size: 39.5pt;
+  width: 80%;
+  display:inline-block;
 }
 .about-description p{
-  width: 510px;
+  width: 80%;;
   font-family: Montserrat;
   font-size: 18pt;
   color: #CCC;
   margin-bottom: 50px;
+  display: inline-block;
 }
-
-.nav-buttons a {
-  border: 1px solid #606060;
+.nav-buttons button {
+  background: rgba(0,0,0,0.8);
+  color: #606060;
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-decoration: none;
   font-size: 18pt;
   font-family: Montserrat;
   font-weight: 200;
-  color: #606060;
-  margin-right: 40px;
-
+  border: 1px solid #606060;
   transition: .4s;
+  width: 200px;
+  margin: 25px;
+  border-radius: 10px;
 }
-
-.nav-buttons a:hover {
-  color: #BBB;
+.nav-buttons button:hover{
+  color:#BBB;
   border: 1px solid #BBB;
 }
 
+.nav-buttons button:focus{
+  color:#B00;
+  border: 1px solid #BBB;
+  outline:none;
+}
+
+
 .about {
-  visibility: visible;
+  position:absolute;
+  top: auto;
+  right: 0px;
+  visibility: hidden;
   width: 60%;
+}
+#about {
+  visibility: visible;
 }
 .about h1{
   font-family: Montserrat;
@@ -76,14 +92,117 @@ body {
   color: #BBB;
   font-size: 36pt;
   margin-top: 200px;
-  margin-left: 120px;
+  margin-left: 10%;
+  margin-bottom: 130px;
+  width: 80%;
 }
 .about p {
   font-family: Montserrat;
   font-weight: 200;
   font-size: 20pt;
-  margin-top: 100px;
   color: #CCC;
-  margin-left: 100px;
-  padding-right: 100px;
+  margin-left: 10%;
+  width: 80%;
+}
+
+
+.social img{
+  width: 40px;
+  margin: 5px;
+  margin-top: 40px;
+
+}
+.social a{
+  margin: 20px;
+}
+
+/*RIGHT ELEMENTS*/
+
+.imgcontainer {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #555;
+  background: rgba(0,0,0,0.8);
+}
+.imgcontainer img {
+  z-index: 100;
+  width: 180px;
+  position: absolute;
+  padding: 10px;
+}
+.imgcontainer img:hover{
+  opacity: 50%;
+}
+.imgcontainer p {
+  margin: 10px;
+  padding: 0px;
+  position: absolute;
+  z-index: 1;
+  font-size: 12pt;
+  visibility: hidden;
+}
+.imgcontainer p:hover {
+  visibility: visible;
+}
+.title {
+  width: 200px;
+  border: 1px solid #555;
+  background: rgba(0,0,0,0.8);
+}
+.project h4, h6 {
+  font-family: Montserrat;
+  font-weight: 400;
+  color: #BBB;
+  margin: 10px;
+}
+.project{
+  float: left;
+  margin-left: 10%;
+  margin-bottom: 50px;
+}
+
+/*window*/
+.window {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border: 1px solid #555;
+  max-width: 700px;
+  box-shadow: 0 20px 70px rgba(9, 9, 9, 0.55);
+  margin-left: 10%;
+  background: rgba(0,0,0, 0.8);
+  width: 100%;
+  height: 100%;
+  max-height: 500px;
+  color: #BBB;
+}
+.window:before {
+  content: '🏠computer - bash - 80x24';
+  display: block;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(5, 5, 5, 0.7);
+  height: 20px;
+  text-align: center;
+  color: #BBB;
+  font-size: 12px;
+  font-weight:normal;
+  line-height: 20px;
+  vertical-align: middle;
+  border: 1px solid #555;
+  /*border-left-color: #555;
+  border-right-color: #555;
+  border-bottom-color: #555;*/
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background: radial-gradient(7px at 14px 50%, #ff5e57 0px, #ff635a 5px, #fd5249 6px, rgba(255, 255, 255, 0) 7px), radial-gradient(7px at 34px 50%, #ffbd2e 0px, #ffc42f 5px, #fcb91b 6px, rgba(255, 255, 255, 0) 7px), radial-gradient(7px at 54px 50%, #00bb00 0px, #00bb00 5px, #00bb00 6px, rgba(255, 255, 255, 0) 7px), linear-gradient(to top, #000 0%, #202020 1px, #252525 100%);
+}
+
+.copyright p{
+  color: #303030;
+  font-family: Montserrat;
+  font-weight: 200;
+  position: relative;
+  font-size: 16pt;
 }

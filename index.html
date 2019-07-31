@@ -4,174 +4,266 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
     <meta charset="utf-8">
     <link rel="stylesheet" href="master.css">
+    <script src="functions.js"></script>
   </head>
   <body>
     <canvas id="canvas"></canvas>
     <div class="about-container">
       <div class="about-description">
+        <img id="me" src="images/me.jpg" alt="me">
         <h1>MARCO PONTONE</h1>
-        <p>Hi. I'm a Computer Engineering Student at University of Pisa.</p>
+        <p>Hi! I'm a Computer Engineering Student at University of Pisa.</p>
         <div class="nav-buttons">
-          <a href="#">ABOUT</a>
-          <a href="#">SKILLS</a>
-          <a href="#">PROJECTS</a><br><br><br><br>
+          <button type="button" name="button" onclick="switchVisibility('about')">ABOUT</button>
+          <button type="button" name="button" onclick="switchVisibility('skills')">SKILLS</button>
+          <button type="button" name="button" onclick="switchVisibility('projects')">PROJECTS</button>
+        </div>
+        <div class="socialbar">
+          <a class="social" href="https://www.facebook.com/khor94">
+            <img src="images/facebook.png" alt="facebook"></a>
 
-          <a href="#">CONTACT</a>
+          <a class="social" href="https://www.instagram.com/moltenkhor/">
+            <img src="images/instagram.png" alt="instagram"></a>
+
+          <a class="social" href="https://twitter.com/Kh0r">
+            <img src="images/twitter.png" alt="twitter"></a>
+
+          <a class="social" href="https://www.linkedin.com/in/marco-pontone-9984349a/">
+            <img src="images/linkedin.png" alt="linkedin"></a>
+
+          <a class="social" href="https://github.com/MoltenKH0R">
+            <img src="images/github.png" alt="github"></a>
+        </div>
+        <div class="copyright">
+          <i><p>&copy Copyright 2019 All rights reserved.</p></i>
         </div>
       </div>
     </div>
-    <div class="about">
+    <div class="about" id="about">
       <h1>About Me</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
+    <div class="about" id="skills">
+      <h1>Skills</h1>
+      <div class="window">
+        computer-MBP-aa48: skills --v <br>
+        Languages:<pre> - Italian [Fluent], English [Fluent];</pre>
+        Programming Languages:<pre> - C++, Java, PHP, JavaScript, AJAX, MySQL, JSON;</pre>
+        Others:<pre> - HTML, CSS, HTTP, HTTPS, Crypto and Security algorithms;</pre>
+        Experience:<pre> - Sofware and Hardware technician [5 Years]; <br> - NASA Space Apps Challenge 2019 at University of Pisa (Organizer);</pre>
+        <br>
+        computer-MBP-aa48: self --status <br>
+        Status:<pre> - Unemployed, Student</pre>
+      </div>
+    </div>
+    <div class="about" id="projects">
+      <h1>Projects</h1>
+      <a href="#" class="project">
+        <div class="imgcontainer">
+          <img src="images/dsky.png" alt="dsky">
+        </div>
+        <div class="title">
+          <h4>DSKY-2 Replica</h4>
+          <h6 style="color: yellow">Status: Incomplete</h6>
+        </div>
+      </a>
+      <a href="#" class="project">
+        <div class="imgcontainer">
+          <img src="images/thermo.png" alt="thermo">
+        </div>
+        <div class="title">
+          <h4>ThermAi</h4>
+          <h6 style="color: yellow">Status: Incomplete</h6>
+        </div>
+      </a>
+      <a href="#" class="project">
+        <div class="imgcontainer">
+          <img src="images/sep8.png" alt="sep8">
+        </div>
+        <div class="title">
+          <h4>Corsini's SEP-8</h4>
+          <h6 style="color: yellow">Status: Incomplete</h6>
+        </div>
+      </a>
+      <a href="#" class="project">
+        <div class="imgcontainer">
+          <img src="images/amp.png" alt="amp">
+        </div>
+        <div class="title">
+          <h4>Audio Amplifier</h4>
+          <h6 style="color: yellow">Status: Incomplete</h6>
+        </div>
+      </a>
+      <a href="#" class="project">
+        <div class="imgcontainer">
+          <img src="images/astropi.png" alt="astropi">
+        </div>
+        <div class="title">
+          <h4>Astro-Pi extension</h4>
+          <h6 style="color: yellow">Status: Incomplete</h6>
+        </div>
+      </a>
+      <a href="#" class="project">
+        <div class="imgcontainer">
+          <img src="images/ue4.png" alt="ue4">
+        </div>
+        <div class="title">
+          <h4>RoboRace UE4 AI Simulator</h4>
+          <h6 style="color: yellow">Status: Incomplete</h6>
+        </div>
+      </a>
+
+      </div>
+    </div>
 
     <script>
-            window.requestAnimFrame = function()
-        	{
-        		return (
-        			window.requestAnimationFrame       ||
-        			window.webkitRequestAnimationFrame ||
-        			window.mozRequestAnimationFrame    ||
-        			window.oRequestAnimationFrame      ||
-        			window.msRequestAnimationFrame     ||
-        			function(/* function */ callback){
-        				window.setTimeout(callback, 1000 / 60);
-        			}
-        		);
-        }();
+    window.requestAnimFrame = function()
+    {
+    return (
+      window.requestAnimationFrame       ||
+      window.webkitRequestAnimationFrame ||
+      window.mozRequestAnimationFrame    ||
+      window.oRequestAnimationFrame      ||
+      window.msRequestAnimationFrame     ||
+      function(/* function */ callback){
+        window.setTimeout(callback, 1000 / 60);
+      }
+    );
+    }();
 
-        var canvas = document.getElementById('canvas');
-        var context = canvas.getContext('2d');
+    var canvas = document.getElementById('canvas');
+    var context = canvas.getContext('2d');
 
-        //get DPI
-        let dpi = window.devicePixelRatio || 1;
-        context.scale(dpi, dpi);
-        console.log(dpi);
+    //get DPI
+    let dpi = window.devicePixelRatio || 1;
+    context.scale(dpi, dpi);
+    console.log(dpi);
 
-        function fix_dpi() {
-        //get CSS height
-        //the + prefix casts it to an integer
-        //the slice method gets rid of "px"
-        let style_height = +getComputedStyle(canvas).getPropertyValue("height").slice(0, -2);
-        let style_width = +getComputedStyle(canvas).getPropertyValue("width").slice(0, -2);
+    function fix_dpi() {
+    //get CSS height
+    //the + prefix casts it to an integer
+    //the slice method gets rid of "px"
+    let style_height = +getComputedStyle(canvas).getPropertyValue("height").slice(0, -2);
+    let style_width = +getComputedStyle(canvas).getPropertyValue("width").slice(0, -2);
 
-        //scale the canvas
-        canvas.setAttribute('height', style_height * dpi);
-        canvas.setAttribute('width', style_width * dpi);
+    //scale the canvas
+    canvas.setAttribute('height', style_height * dpi);
+    canvas.setAttribute('width', style_width * dpi);
+    }
+
+    var particle_count = 70,
+    particles = [],
+    couleurs   = ["#999", "#AA0000", "#fff","#505050"];
+    function Particle()
+    {
+
+        this.radius = Math.round((Math.random()*3)+5);
+        this.x = Math.floor((Math.random() * ((+getComputedStyle(canvas).getPropertyValue("width").slice(0, -2) * dpi) - this.radius + 1) + this.radius));
+        this.y = Math.floor((Math.random() * ((+getComputedStyle(canvas).getPropertyValue("height").slice(0, -2) * dpi) - this.radius + 1) + this.radius));
+        this.color = couleurs[Math.round(Math.random()*couleurs.length)];
+        this.speedx = Math.round((Math.random()*201)+0)/100;
+        this.speedy = Math.round((Math.random()*201)+0)/100;
+
+        switch (Math.round(Math.random()*couleurs.length))
+        {
+            case 1:
+            this.speedx *= 1;
+            this.speedy *= 1;
+            break;
+            case 2:
+            this.speedx *= -1;
+            this.speedy *= 1;
+            break;
+            case 3:
+            this.speedx *= 1;
+            this.speedy *= -1;
+            break;
+            case 4:
+            this.speedx *= -1;
+            this.speedy *= -1;
+            break;
         }
 
-        	var particle_count = 70,
-        		particles = [],
-        		couleurs   = ["#999", "#AA0000", "#fff","#505050"];
-            function Particle()
+        this.move = function()
+        {
+
+            context.beginPath();
+            context.globalCompositeOperation = 'source-over';
+            context.fillStyle   = this.color;
+            context.globalAlpha = 1;
+            context.arc(this.x, this.y, this.radius, 0, Math.PI*2, false);
+            context.fill();
+            context.closePath();
+
+            this.x = this.x + this.speedx;
+            this.y = this.y + this.speedy;
+
+            if(this.x <= 0+this.radius)
             {
+                this.speedx *= -1;
+            }
+            if(this.x >= canvas.width-this.radius)
+            {
+                this.speedx *= -1;
+            }
+            if(this.y <= 0+this.radius)
+            {
+                this.speedy *= -1;
+            }
+            if(this.y >= canvas.height-this.radius)
+            {
+                this.speedy *= -1;
+            }
 
-                this.radius = Math.round((Math.random()*3)+5);
-                this.x = Math.floor((Math.random() * ((+getComputedStyle(canvas).getPropertyValue("width").slice(0, -2) * dpi) - this.radius + 1) + this.radius));
-                this.y = Math.floor((Math.random() * ((+getComputedStyle(canvas).getPropertyValue("height").slice(0, -2) * dpi) - this.radius + 1) + this.radius));
-                this.color = couleurs[Math.round(Math.random()*couleurs.length)];
-                this.speedx = Math.round((Math.random()*201)+0)/100;
-                this.speedy = Math.round((Math.random()*201)+0)/100;
+            for (var j = 0; j < particle_count; j++)
+            {
+                var particleActuelle = particles[j],
+                    yd = particleActuelle.y - this.y,
+                    xd = particleActuelle.x - this.x,
+                    d  = Math.sqrt(xd * xd + yd * yd);
 
-                switch (Math.round(Math.random()*couleurs.length))
+                if ( d < 200 )
                 {
-                    case 1:
-                    this.speedx *= 1;
-                    this.speedy *= 1;
-                    break;
-                    case 2:
-                    this.speedx *= -1;
-                    this.speedy *= 1;
-                    break;
-                    case 3:
-                    this.speedx *= 1;
-                    this.speedy *= -1;
-                    break;
-                    case 4:
-                    this.speedx *= -1;
-                    this.speedy *= -1;
-                    break;
-                }
-
-                this.move = function()
-                {
-
                     context.beginPath();
-                    context.globalCompositeOperation = 'source-over';
-                    context.fillStyle   = this.color;
-                    context.globalAlpha = 1;
-                    context.arc(this.x, this.y, this.radius, 0, Math.PI*2, false);
-                    context.fill();
+                    context.globalAlpha = (200 - d) / (200 - 0);
+                    context.globalCompositeOperation = 'destination-over';
+                    context.lineWidth = 1;
+                    context.moveTo(this.x, this.y);
+                    context.lineTo(particleActuelle.x, particleActuelle.y);
+                    context.strokeStyle = this.color;
+                    context.lineCap = "round";
+                    context.stroke();
                     context.closePath();
-
-                    this.x = this.x + this.speedx;
-                    this.y = this.y + this.speedy;
-
-                    if(this.x <= 0+this.radius)
-                    {
-                        this.speedx *= -1;
-                    }
-                    if(this.x >= canvas.width-this.radius)
-                    {
-                        this.speedx *= -1;
-                    }
-                    if(this.y <= 0+this.radius)
-                    {
-                        this.speedy *= -1;
-                    }
-                    if(this.y >= canvas.height-this.radius)
-                    {
-                        this.speedy *= -1;
-                    }
-
-                    for (var j = 0; j < particle_count; j++)
-                    {
-                        var particleActuelle = particles[j],
-                            yd = particleActuelle.y - this.y,
-                            xd = particleActuelle.x - this.x,
-                            d  = Math.sqrt(xd * xd + yd * yd);
-
-                        if ( d < 200 )
-                        {
-                            context.beginPath();
-                            context.globalAlpha = (200 - d) / (200 - 0);
-                            context.globalCompositeOperation = 'destination-over';
-                            context.lineWidth = 1;
-                            context.moveTo(this.x, this.y);
-                            context.lineTo(particleActuelle.x, particleActuelle.y);
-                            context.strokeStyle = this.color;
-                            context.lineCap = "round";
-                            context.stroke();
-                            context.closePath();
-                        }
-                    }
-                };
-            };
-            for (var i = 0; i < particle_count; i++)
-            {
-                fix_dpi();
-                var particle = new Particle();
-                particles.push(particle);
-            }
-
-
-            function animate()
-            {
-                fix_dpi();
-                context.clearRect(0, 0, canvas.width, canvas.height);
-                for (var i = 0; i < particle_count; i++)
-                {
-                    particles[i].move();
                 }
-                requestAnimFrame(animate);
             }
+        };
+    };
+    for (var i = 0; i < particle_count; i++)
+    {
+        fix_dpi();
+        var particle = new Particle();
+        particles.push(particle);
+    }
+
+
+    function animate()
+    {
+        fix_dpi();
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        for (var i = 0; i < particle_count; i++)
+        {
+            particles[i].move();
+        }
+        requestAnimFrame(animate);
+    }
 
 
 
 
-            animate();
+    animate();
 
     </script>
   </body>
