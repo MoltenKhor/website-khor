@@ -1,8 +1,9 @@
 
 .hamburger {
-  position: relative;
-  float: right;
-  padding: 20px 15px;
+  position: fixed;
+  right: 0px;
+  top:0px;
+  padding: 20px;
   display: inline-block;
   cursor: pointer;
   transition-property: opacity, filter;

@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
   <head>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
@@ -14,50 +13,26 @@
   </head>
   <body>
     <canvas id="canvas"></canvas>
-    <div class="about-container">
-      <div class="about-description">
-        <img id="me" src="images/me.jpg" alt="me">
-        <h1>MARCO PONTONE</h1>
-        <p>Hi! I'm a Computer Engineering Student at University of Pisa.</p>
-        <div class="nav-buttons">
-          <div class="dropdown-content" id="myDropdown">
-            <a href="#about">ABOUT</a>
-            <a href="#skills">SKILLS</a>
-            <a href="#projects">PROJECTS</a>
-          </div>
-          <button class="hamburger hamburger--emphatic" type="button" onclick="buttonActive()">
-            <span class="hamburger-box">
-              <span class="hamburger-inner">
-              </span>
+    <div class="top-bar">
+      <img id="me-top" src="images/favicon.png" alt="logo">
+      <h1>MARCO PONTONE</h1>
+      <div class="nav-buttons">
+        <div class="dropdown-content" id="myDropdown">
+          <a href="#about">ABOUT</a>
+          <a href="#skills">SKILLS</a>
+          <a href="#projects">PROJECTS</a>
+        </div>
+        <button class="hamburger hamburger--emphatic" type="button" onclick="buttonActive()">
+          <span class="hamburger-box">
+            <span class="hamburger-inner">
             </span>
-          </button>
-          <button class="btn" type="button" name="button" onclick="switchVisibility('about')">ABOUT</button>
-          <button class="btn" type="button" name="button" onclick="switchVisibility('skills')">SKILLS</button>
-          <button class="btn" type="button" name="button" onclick="switchVisibility('projects')">PROJECTS</button>
-        </div>
-        <div class="socialbar">
-          <a class="social" href="https://www.facebook.com/khor94">
-            <img src="images/facebook.png" alt="facebook"></a>
-
-          <a class="social" href="https://www.instagram.com/moltenkhor/">
-            <img src="images/instagram.png" alt="instagram"></a>
-
-          <a class="social" href="https://twitter.com/Kh0r">
-            <img src="images/twitter.png" alt="twitter"></a>
-
-          <a class="social" href="https://www.linkedin.com/in/marco-pontone-9984349a/">
-            <img src="images/linkedin.png" alt="linkedin"></a>
-
-          <a class="social" href="https://github.com/MoltenKH0R">
-            <img src="images/github.png" alt="github"></a>
-        </div>
-        <div class="copyright">
-          <i><p>&copy Copyright 2019 All rights reserved.</p></i>
-        </div>
+          </span>
+        </button>
       </div>
     </div>
     <div class="about" id="about">
       <h1>About Me</h1>
+      <img id="me" src="images/me.jpg" alt="me">
       <p>Computer Engineering student at University of Pisa. <br>Unreal Engine 4 Programmer (8+ years). <br>Automation, Home intelligence and AI enthusiast with 10 years of electronics and mobile repair experience. <br>Science and Space and cat lover. <br>Former <a href="http://mlpi.ing.unipi.it/spaceapps/">NASA Space Apps Pisa</a> co-founder and Organizator. </p>
     </div>
     <div class="about" id="skills">
@@ -72,227 +47,81 @@
         computer-MBP-aa48: self --status <br>
         Status:<pre> - Unemployed, Student</pre>
       </div>
-    </div>
-    <div class="about" id="projects">
-      <h1>Projects</h1>
-      <a href="#" class="project">
-        <div class="imgcontainer">
-          <img src="images/dsky.png" alt="dsky">
-        </div>
-        <div class="title">
-          <h4>DSKY-2 Replica</h4>
-          <h6 style="color: yellow">Status: incomplete</h6>
-        </div>
-      </a>
-      <a href="#" class="project">
-        <div class="imgcontainer">
-          <img src="images/thermo.png" alt="thermo">
-        </div>
-        <div class="title">
-          <h4>ThermAi</h4>
-          <h6 style="color: yellow">Status: Incomplete</h6>
-        </div>
-      </a>
-      <a href="#" class="project">
-        <div class="imgcontainer">
-          <img src="images/sep8.png" alt="sep8">
-        </div>
-        <div class="title">
-          <h4>Corsini's SEP-8</h4>
-          <h6 style="color: yellow">Status: Incomplete</h6>
-        </div>
-      </a>
-      <a href="#" class="project">
-        <div class="imgcontainer">
-          <img src="images/amp.png" alt="amp">
-        </div>
-        <div class="title">
-          <h4>Audio Amplifier</h4>
-          <h6 style="color: yellow">Status: Incomplete</h6>
-        </div>
-      </a>
-      <a href="#" class="project">
-        <div class="imgcontainer">
-          <img src="images/astropi.png" alt="astropi">
-        </div>
-        <div class="title">
-          <h4>Astro-Pi extension</h4>
-          <h6 style="color: yellow">Status: Incomplete</h6>
-        </div>
-      </a>
-      <a href="http://mlpi.ing.unipi.it/spaceapps" class="project">
-        <div class="imgcontainer">
-          <img src="images/sap.png" alt="space apps pisa">
-        </div>
-        <div class="title">
-          <h4>NASA SpaceApps Pisa</h4>
-          <h6 style="color: green">Status: Ongioing</h6>
-        </div>
-      </a>
-
       </div>
-    </div>
+      <div class="about" id="projects">
+        <h1>Projects</h1>
+        <a href="#" class="project">
+          <div class="imgcontainer">
+            <img src="images/dsky.png" alt="dsky">
+          </div>
+          <div class="title">
+            <h4>DSKY-2 Replica</h4>
+            <h6 style="color: yellow">Status: incomplete</h6>
+          </div>
+        </a>
+        <a href="#" class="project">
+          <div class="imgcontainer">
+            <img src="images/thermo.png" alt="thermo">
+          </div>
+          <div class="title">
+            <h4>ThermAi</h4>
+            <h6 style="color: yellow">Status: Incomplete</h6>
+          </div>
+        </a>
+        <a href="#" class="project">
+          <div class="imgcontainer">
+            <img src="images/sep8.png" alt="sep8">
+          </div>
+          <div class="title">
+            <h4>Corsini's SEP-8</h4>
+            <h6 style="color: yellow">Status: Incomplete</h6>
+          </div>
+        </a>
+        <a href="#" class="project">
+          <div class="imgcontainer">
+            <img src="images/amp.png" alt="amp">
+          </div>
+          <div class="title">
+            <h4>Audio Amplifier</h4>
+            <h6 style="color: yellow">Status: Incomplete</h6>
+          </div>
+        </a>
+        <a href="#" class="project">
+          <div class="imgcontainer">
+            <img src="images/astropi.png" alt="astropi">
+          </div>
+          <div class="title">
+            <h4>Astro-Pi extension</h4>
+            <h6 style="color: yellow">Status: Incomplete</h6>
+          </div>
+        </a>
+        <a href="http://mlpi.ing.unipi.it/spaceapps" class="project">
+          <div class="imgcontainer">
+            <img src="images/sap.png" alt="space apps pisa">
+          </div>
+          <div class="title">
+            <h4>NASA SpaceApps Pisa</h4>
+            <h6 style="color: green">Status: Ongioing</h6>
+          </div>
+        </a>
 
-    <script>
-      window.requestAnimFrame = function()
-      {
-      return (
-        window.requestAnimationFrame       ||
-        window.webkitRequestAnimationFrame ||
-        window.mozRequestAnimationFrame    ||
-        window.oRequestAnimationFrame      ||
-        window.msRequestAnimationFrame     ||
-        function(/* function */ callback){
-          window.setTimeout(callback, 1000 / 60);
-        }
-      );
-      }();
-
-      var canvas = document.getElementById('canvas');
-      var context = canvas.getContext('2d');
-
-      //get DPI
-      let dpi = window.devicePixelRatio || 1;
-      context.scale(dpi, dpi);
-      console.log(dpi);
-
-      function fix_dpi() {
-      //get CSS height
-      //the + prefix casts it to an integer
-      //the slice method gets rid of "px"
-      let style_height = +getComputedStyle(canvas).getPropertyValue("height").slice(0, -2);
-      let style_width = +getComputedStyle(canvas).getPropertyValue("width").slice(0, -2);
-
-      //scale the canvas
-      canvas.setAttribute('height', style_height * dpi);
-      canvas.setAttribute('width', style_width * dpi);
-      }
-
-      var particle_count = 70,
-      particles = [],
-      couleurs   = ["#999", "#AA0000", "#fff","#505050"];
-      function Particle()
-      {
-
-          this.radius = Math.round((Math.random()*3)+5);
-          this.x = Math.floor((Math.random() * ((+getComputedStyle(canvas).getPropertyValue("width").slice(0, -2) * dpi) - this.radius + 1) + this.radius));
-          this.y = Math.floor((Math.random() * ((+getComputedStyle(canvas).getPropertyValue("height").slice(0, -2) * dpi) - this.radius + 1) + this.radius));
-          this.color = couleurs[Math.round(Math.random()*couleurs.length)];
-          this.speedx = Math.round((Math.random()*201)+0)/100;
-          this.speedy = Math.round((Math.random()*201)+0)/100;
-
-          switch (Math.round(Math.random()*couleurs.length))
-          {
-              case 1:
-              this.speedx *= 1;
-              this.speedy *= 1;
-              break;
-              case 2:
-              this.speedx *= -1;
-              this.speedy *= 1;
-              break;
-              case 3:
-              this.speedx *= 1;
-              this.speedy *= -1;
-              break;
-              case 4:
-              this.speedx *= -1;
-              this.speedy *= -1;
-              break;
+        </div>
+        <script type="text/javascript">
+          var button_active = false;
+          function buttonActive(){
+            var menu = document.getElementById('myDropdown');
+            var hamburger = document.getElementsByClassName('hamburger');
+            console.log(menu + hamburger);
+            if(!button_active){
+              menu.style.display = "block";
+              hamburger[0].classList.add("is-active");
+              button_active = true;
+            }else{
+              menu.style.display = "none";
+              hamburger[0].classList.remove("is-active");
+              button_active = false;
+            }
           }
-
-          this.move = function()
-          {
-
-              context.beginPath();
-              context.globalCompositeOperation = 'source-over';
-              context.fillStyle   = this.color;
-              context.globalAlpha = 1;
-              context.arc(this.x, this.y, this.radius, 0, Math.PI*2, false);
-              context.fill();
-              context.closePath();
-
-              this.x = this.x + this.speedx;
-              this.y = this.y + this.speedy;
-
-              if(this.x <= 0+this.radius)
-              {
-                  this.speedx *= -1;
-              }
-              if(this.x >= canvas.width-this.radius)
-              {
-                  this.speedx *= -1;
-              }
-              if(this.y <= 0+this.radius)
-              {
-                  this.speedy *= -1;
-              }
-              if(this.y >= canvas.height-this.radius)
-              {
-                  this.speedy *= -1;
-              }
-
-              for (var j = 0; j < particle_count; j++)
-              {
-                  var particleActuelle = particles[j],
-                      yd = particleActuelle.y - this.y,
-                      xd = particleActuelle.x - this.x,
-                      d  = Math.sqrt(xd * xd + yd * yd);
-
-                  if ( d < 200 )
-                  {
-                      context.beginPath();
-                      context.globalAlpha = (200 - d) / (200 - 0);
-                      context.globalCompositeOperation = 'destination-over';
-                      context.lineWidth = 1;
-                      context.moveTo(this.x, this.y);
-                      context.lineTo(particleActuelle.x, particleActuelle.y);
-                      context.strokeStyle = this.color;
-                      context.lineCap = "round";
-                      context.stroke();
-                      context.closePath();
-                  }
-              }
-          };
-      };
-      for (var i = 0; i < particle_count; i++)
-      {
-          fix_dpi();
-          var particle = new Particle();
-          particles.push(particle);
-      }
-
-
-      function animate()
-      {
-          fix_dpi();
-          context.clearRect(0, 0, canvas.width, canvas.height);
-          for (var i = 0; i < particle_count; i++)
-          {
-              particles[i].move();
-          }
-          requestAnimFrame(animate);
-      }
-
-
-
-
-      //animate();
-      var button_active = false;
-      function buttonActive(){
-        var menu = document.getElementById('myDropdown');
-        var hamburger = document.getElementsByClassName('hamburger');
-        console.log(menu + hamburger);
-        if(!button_active){
-          menu.style.display = "block";
-          hamburger[0].classList.add("is-active");
-          button_active = true;
-        }else{
-          menu.style.display = "none";
-          hamburger[0].classList.remove("is-active");
-          button_active = false;
-        }
-      }
-    </script>
+        </script>
   </body>
 </html>
