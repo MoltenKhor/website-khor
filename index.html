@@ -1,127 +1,213 @@
-<html>
-  <head>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-    <meta charset="utf-8">
-    <link href="hamburgers.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="master.css">
-    <script src="functions.js"></script>
-    <title>Marco Pontone</title>
-  </head>
-  <body>
-    <canvas id="canvas"></canvas>
-    <div class="top-bar">
-      <img id="me-top" src="images/favicon.png" alt="logo">
-      <h1>MARCO PONTONE</h1>
-      <div class="nav-buttons">
-        <div class="dropdown-content" id="myDropdown">
-          <a href="#about">ABOUT</a>
-          <a href="#skills">SKILLS</a>
-          <a href="#projects">PROJECTS</a>
-        </div>
-        <button class="hamburger hamburger--emphatic" type="button" onclick="buttonActive()">
-          <span class="hamburger-box">
-            <span class="hamburger-inner">
-            </span>
-          </span>
-        </button>
-      </div>
-    </div>
-    <div class="about" id="about">
-      <h1>About Me</h1>
-      <img id="me" src="images/me.jpg" alt="me">
-      <p>Computer Engineering student at University of Pisa. <br>Unreal Engine 4 Programmer (8+ years). <br>Automation, Home intelligence and AI enthusiast with 10 years of electronics and mobile repair experience. <br>Science and Space and cat lover. <br>Former <a href="http://mlpi.ing.unipi.it/spaceapps/">NASA Space Apps Pisa</a> co-founder and Organizator. </p>
-    </div>
-    <div class="about" id="skills">
-      <h1>Skills</h1>
-      <div class="window">
-        computer-MBP-aa48: skills --v <br>
-        Languages:<pre> - Italian [Fluent], English [Fluent];</pre>
-        Programming Languages:<pre> - C++, Java, PHP, JavaScript, AJAX, MySQL, JSON;</pre>
-        Others:<pre> - HTML, CSS, HTTP, HTTPS, Crypto and Security algorithms;</pre>
-        Experience:<pre> - Sofware and Hardware technician [5 Years]; <br> - NASA Space Apps 2019 at University of Pisa (Organizer);</pre>
-        <br>
-        computer-MBP-aa48: self --status <br>
-        Status:<pre> - Unemployed, Student</pre>
-      </div>
-      </div>
-      <div class="about" id="projects">
-        <h1>Projects</h1>
-        <a href="#" class="project">
-          <div class="imgcontainer">
-            <img src="images/dsky.png" alt="dsky">
-          </div>
-          <div class="title">
-            <h4>DSKY-2 Replica</h4>
-            <h6 style="color: yellow">Status: incomplete</h6>
-          </div>
-        </a>
-        <a href="#" class="project">
-          <div class="imgcontainer">
-            <img src="images/thermo.png" alt="thermo">
-          </div>
-          <div class="title">
-            <h4>ThermAi</h4>
-            <h6 style="color: yellow">Status: Incomplete</h6>
-          </div>
-        </a>
-        <a href="#" class="project">
-          <div class="imgcontainer">
-            <img src="images/sep8.png" alt="sep8">
-          </div>
-          <div class="title">
-            <h4>Corsini's SEP-8</h4>
-            <h6 style="color: yellow">Status: Incomplete</h6>
-          </div>
-        </a>
-        <a href="#" class="project">
-          <div class="imgcontainer">
-            <img src="images/amp.png" alt="amp">
-          </div>
-          <div class="title">
-            <h4>Audio Amplifier</h4>
-            <h6 style="color: yellow">Status: Incomplete</h6>
-          </div>
-        </a>
-        <a href="#" class="project">
-          <div class="imgcontainer">
-            <img src="images/astropi.png" alt="astropi">
-          </div>
-          <div class="title">
-            <h4>Astro-Pi extension</h4>
-            <h6 style="color: yellow">Status: Incomplete</h6>
-          </div>
-        </a>
-        <a href="http://mlpi.ing.unipi.it/spaceapps" class="project">
-          <div class="imgcontainer">
-            <img src="images/sap.png" alt="space apps pisa">
-          </div>
-          <div class="title">
-            <h4>NASA SpaceApps Pisa</h4>
-            <h6 style="color: green">Status: Ongioing</h6>
-          </div>
-        </a>
+<!DOCTYPE html>
+<html lang="en">
 
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>KHOR Development</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.png" alt="KHOR">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="browse.html">Projects</a></li>
+                        <li><a href="details.html">Stories</a></li>
+                        <li><a href="streams.html">About</a></li>
+                        <li><a href="https://www.khor.store">Store <img src="assets/images/profile-header.jpg" alt=""></a></li>
+                    </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
         </div>
-        <script type="text/javascript">
-          var button_active = false;
-          function buttonActive(){
-            var menu = document.getElementById('myDropdown');
-            var hamburger = document.getElementsByClassName('hamburger');
-            console.log(menu + hamburger);
-            if(!button_active){
-              menu.style.display = "block";
-              hamburger[0].classList.add("is-active");
-              button_active = true;
-            }else{
-              menu.style.display = "none";
-              hamburger[0].classList.remove("is-active");
-              button_active = false;
-            }
-          }
-        </script>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Banner Start ***** -->
+          <div class="main-banner">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="header-text">
+                 
+                  <h4><em>Find</em> The best cable that fits your build.</h4>
+                  <div class="main-button">
+                    <a href="https://khor.store/en/collections/cavi">Browse Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Banner End ***** -->
+
+          <!-- ***** Most Popular Start ***** -->
+          <div class="most-popular">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4>Popular products</h4>
+                </div>
+                <div class="row">
+                  
+                  <div class="col-lg-3 col-sm-6">
+                    <a href="https://khor.store/en-us/products/krytox-205g2">
+                    <div class="item">
+                      <img src="assets/images/popular-01.jpg" alt="">
+                      <h4>Krytox 205<br><span>Tools</span></h4>
+                    </div>
+                  </a>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <a href="https://khor.store/en-us/products/switch-tester">
+                    <div class="item">
+                      <img src="assets/images/popular-02.jpg" alt="">
+                      <h4>Stab Tester<br><span>Accessory</span></h4> 
+                    </div></a>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <a href="https://khor.store/en-us/products/yc8-adromeda">
+                    <div class="item">
+                      <img src="assets/images/popular-03.jpg" alt="">
+                      <h4>Andromeda<br><span>Coiled YC8 USB-C</span></h4>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <a href="https://khor.store/en-us/products/weipu-dualshot-r2">
+                    <div class="item">
+                      <img src="assets/images/popular-04.jpg" alt="">
+                      <h4>Dualshot<br><span>Coiled Weipu USB-C</span></h4>
+                    </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Most Popular End ***** -->
+          
+
+          <!-- ***** Gaming Library Start ***** -->
+          <div class="gaming-library">
+            <div class="col-lg-12">
+              <div class="heading-section">
+                <h4><em>Your Gaming</em> Library</h4>
+              </div>
+              <div class="item">
+                <ul>
+                  <li><img src="assets/images/game-01.jpg" alt="" class="templatemo-item"></li>
+                  <li><h4>Dota 2</h4><span>Sandbox</span></li>
+                  <li><h4>Date Added</h4><span>24/08/2036</span></li>
+                  <li><h4>Hours Played</h4><span>634 H 22 Mins</span></li>
+                  <li><h4>Currently</h4><span>Downloaded</span></li>
+                  <li><div class="main-border-button border-no-active"><a href="#">Donwloaded</a></div></li>
+                </ul>
+              </div>
+              <div class="item">
+                <ul>
+                  <li><img src="assets/images/game-02.jpg" alt="" class="templatemo-item"></li>
+                  <li><h4>Fortnite</h4><span>Sandbox</span></li>
+                  <li><h4>Date Added</h4><span>22/06/2036</span></li>
+                  <li><h4>Hours Played</h4><span>740 H 52 Mins</span></li>
+                  <li><h4>Currently</h4><span>Downloaded</span></li>
+                  <li><div class="main-border-button"><a href="#">Donwload</a></div></li>
+                </ul>
+              </div>
+              <div class="item last-item">
+                <ul>
+                  <li><img src="assets/images/game-03.jpg" alt="" class="templatemo-item"></li>
+                  <li><h4>CS-GO</h4><span>Sandbox</span></li>
+                  <li><h4>Date Added</h4><span>21/04/2036</span></li>
+                  <li><h4>Hours Played</h4><span>892 H 14 Mins</span></li>
+                  <li><h4>Currently</h4><span>Downloaded</span></li>
+                  <li><div class="main-border-button border-no-active"><a href="#">Donwloaded</a></div></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="main-button">
+                <a href="profile.html">View Your Library</a>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Gaming Library End ***** -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2023 <a href="#">KHOR</a>. All rights reserved. 
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+
   </body>
+
 </html>
