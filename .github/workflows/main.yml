@@ -8,8 +8,8 @@ jobs:
     - name: Deploy to OVH hosting
       uses: pitscher/ovh-deploy-hosting-action@v1
       env:
-        OVH_HOSTING_USER: ${{ secrets.khordevowh }}
-        OVH_HOSTING_PASSWORD: ${{ secrets.Kh0rhackzorAcr1l1c@ }}
+        OVH_HOSTING_USER: ${{ secrets.OVH_HOSTING_USER }}
+        OVH_HOSTING_PASSWORD: ${{ secrets.OVH_HOSTING_PASSWORD }}
         OVH_HOSTING_DOMAIN: ssh.cluster020.hosting.ovh.net
         REPOSITORY_NAME: website-khor
         REPOSITORY_URL: https://github.com/MoltenKhor/website-khor.git
