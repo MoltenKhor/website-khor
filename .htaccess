@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteCond %{HTTP_HOST} !^khor\.dev$ [NC,OR]
+    RewriteCond %{HTTPS} =off
+    RewriteRule ^(.*)$ https://khor.dev/$1 [R=301,L]
+</IfModule>
+Options -Indexes
