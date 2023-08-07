@@ -1,4 +1,4 @@
- name: Deploy to OVHcloud Power
+  name: Deploy to OVHcloud Power
   on:
     push:
       branches: [ master ]
