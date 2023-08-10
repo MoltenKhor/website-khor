@@ -153,7 +153,7 @@ body {
     float: left;
     text-decoration: none;
     color: #fff;
-    margin: 0 10pt 0 0;
+    margin: 0 5pt;
 }
 
 .resources li a:hover{
@@ -169,6 +169,9 @@ body {
     padding:0 5pt;
     margin: 0 10pt;
     transition: 0.4s;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
 }
 
 .discord:hover {
@@ -208,6 +211,69 @@ body {
     width: 100%;
 }
 
-@media screen {
-    
+@media only screen and (max-width: 1000px){
+   .right {
+    height: 0px;
+   }
+    .header ul {
+        visibility: collapse;
+        height: 0px;
+        width: 0px;
+    }
+    .header ul li{
+        width: 0px;
+    }
+    .bio img, .work img {
+        margin-top: 20pt;
+    }
+
+    .bio h1, .work h1 {
+        margin: 20pt 0 5pt 0;
+        font-size: 18pt;
+    }
+    .bio p, .work p {
+        margin: 0;
+        font-size: 10pt;
+    }
+
+    .gallery img {
+        margin-top: 20pt;
+    }
+    .collaborations {
+        width: 100%;
+        margin:0;
+    }
+    .creator-container{
+        width: 100%;
+        margin:0;
+    }
+    .creator {
+        width: 20%;
+        margin: 2%;
+    }
+
+    .creatorbio {
+        width: 100%;
+        margin: 0;
+    }
+
+    .creatorname {
+        width: 100%;
+        font-size: 8pt;
+    }
+    .resources {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .resources li a{
+        text-align: center;
+        font-size: 10pt;
+    }
+    .discord {
+        margin-bottom: 20pt;
+        width: 50%;
+    }
+
+
 }
