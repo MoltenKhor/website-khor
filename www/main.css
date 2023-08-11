@@ -172,6 +172,27 @@ body {
     text-align: center;
     text-decoration: none;
     color: #fff;
+    font-size: 15pt;
+}
+
+.store {
+    border: 2pt solid #29AAE2;
+    border-radius: 4pt;
+    background-color: #29AAE2;
+    font-weight: 900;
+    padding:0 5pt;
+    margin: 0 10pt;
+    transition: 0.4s;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 18pt;
+}
+.store:hover {
+    border: 2pt solid #fff;
+    background-color: #fff;
+    color: #E22120;
+    transition: 0.4s;
 }
 
 .discord:hover {
@@ -190,6 +211,7 @@ body {
 .collaborations h2 {
     text-align: center;
     font-size: 25pt;
+    margin-top: 50pt;
 }
 
 .collaborations a{
@@ -272,7 +294,11 @@ body {
     }
     .discord {
         margin-bottom: 20pt;
-        width: 50%;
+        width: 60%;
+    }
+    .store {
+        margin-bottom: 20pt;
+        width: 30%;
     }
 
 
