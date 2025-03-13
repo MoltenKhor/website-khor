@@ -52,8 +52,13 @@ body {
 }
 
 .header li a:hover{
-    color:#e42727;
+    color:#6f27e4;
     transition: 0.4s;
+}
+
+.center {
+    width: 70%;
+    margin-left: 15%;
 }
 
 .bio, .work {
@@ -157,7 +162,7 @@ body {
 }
 
 .resources li a:hover{
-    color: #e42727;
+    color: #6f27e4;
     transition: 0.4s;
 }
 
@@ -241,6 +246,10 @@ body {
         visibility: collapse;
         height: 0px;
         width: 0px;
+    }
+    .center {
+        width: 100%;
+        margin: 0;
     }
     .header ul li{
         width: 0px;
